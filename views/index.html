@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <table id="list" border="2">
+      <th><input type="button" id="name" value="姓名"></th>
+      <th><input type="button" id="chinese" value="语文"></th>
+      <th><input type="button" id="chinese" value="数学"></th>
+    {{#each entries}}
+    <tr>
+      <td>{{name}}</td>
+      <td>{{chinese}}</td>
+      <td>{{math}}</td>
+    </tr>
+    {{/each}}
+  </table>
+  <script src="../main.js"></script>
+</body>
+
+</html>
